@@ -230,7 +230,7 @@ Collaborative Notes
 
 If you want to use an Etherpad, go to
 
-http://pad.carpentries.org/2019-07-04-uoa
+http://pad.carpentries.org/2019-09-25-otago
 
 where 'YYYY-MM-DD-site' is the identifier for your workshop,
 e.g., '2015-06-10-esu'.
@@ -311,6 +311,7 @@ please preview your site before committing, and make sure to run
     Bash is a commonly-used shell that gives you the power to do simple
     tasks more quickly.
   </p>
+  </div>
 
   <div>
     <ul class="nav nav-tabs nav-justified" role="tablist">
@@ -321,61 +322,7 @@ please preview your site before committing, and make sure to run
 
     <div class="tab-content">
       <article role="tabpanel" class="tab-pane active" id="shell-windows">
-        <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
-        <ol>
-          <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
-          <li>Run the installer and follow the steps below:
-            <ol>
-              {% comment %} Git 2.18.0 Setup {% endcomment %}
-              <li>
-                Click on "Next" four times (two times if you've previously
-                installed Git).  You don't need to change anything
-                in the Information, location, components, and start menu screens.
-              </li>
-              <li>
-                <strong>
-                  Select "Use the nano editor by default" and click on "Next".
-                </strong>
-              </li>
-              {% comment %} Adjusting your PATH environment {% endcomment %}
-              <li>
-                Keep "Use Git from the Windows Command Prompt" selected and click on "Next".
-                If you forgot to do this programs that you need for the workshop will not work properly.
-                If this happens rerun the installer and select the appropriate option.
-              </li>
-              {% comment %} Choosing the SSH executable {% endcomment %}
-              <li>Click on "Next".</li>
-              {% comment %} Configuring the line ending conversions {% endcomment %}
-              <li>
-                Keep "Checkout Windows-style, commit Unix-style line endings" selected and click on "Next".
-              </li>
-              {% comment %} Configuring the terminal emulator to use with Git Bash {% endcomment %}
-              <li>
-                <strong>
-                  Select "Use Windows' default console window" and click on "Next".
-                </strong>
-              </li>
-              {% comment %} Configuring experimental performance tweaks {% endcomment %}
-              <li>Click on "Install".</li>
-              {% comment %} Installing {% endcomment %}
-              {% comment %} Completing the Git Setup Wizard {% endcomment %}
-              <li>Click on "Finish".</li>
-            </ol>
-          </li>
-          <li>
-            If your "HOME" environment variable is not set (or you don't know what this is):
-            <ol>
-              <li>Open command prompt (Open Start Menu then type <code>cmd</code> and press [Enter])</li>
-              <li>
-                Type the following line into the command prompt window exactly as shown:
-                <p><code>setx HOME "%USERPROFILE%"</code></p>
-              </li>
-              <li>Press [Enter], you should see <code>SUCCESS: Specified value was saved.</code></li>
-              <li>Quit command prompt by typing <code>exit</code> then pressing [Enter]</li>
-            </ol>
-          </li>
-        </ol>
-        <p>This will provide you with both Git and Bash in the Git Bash program.</p>
+        <a href="https://github.com/foreal17/2019-08-01-auckland/blob/gh-pages/WSL_Ubuntu_18.04_LTS.pdf">Terminal installation</a>
       </article>
       <article role="tabpanel" class="tab-pane active" id="shell-macos">
         <p>
@@ -399,7 +346,6 @@ please preview your site before committing, and make sure to run
       </article>
     </div>
   </div>
-</div> {% comment %} End of 'shell' section. {% endcomment %}
 
 
 <div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}
@@ -427,7 +373,6 @@ please preview your site before committing, and make sure to run
       <article role="tabpanel" class="tab-pane active" id="editor-windows">
         <p>
           nano is a basic editor and the default that instructors use in the workshop.
-          It is installed along with Git.
         </p>
         <p>
           Others editors that you can use are
@@ -441,8 +386,6 @@ please preview your site before committing, and make sure to run
       <article role="tabpanel" class="tab-pane active" id="editor-macos">
         <p>
           nano is a basic editor and the default that instructors use in the workshop.
-          See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
-          for an example on how to open nano.
           It should be pre-installed.
         </p>
         <p>
